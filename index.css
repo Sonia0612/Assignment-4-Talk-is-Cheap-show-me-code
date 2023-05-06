@@ -1,0 +1,94 @@
+.App{
+    margin:auto;
+    background-color: #fdfdfd;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header{
+    margin:10px;
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+    border:2px solid black;
+    border-radius: 15px;
+}
+.logo{
+    height:80px;
+}
+.heading{
+    color:orange;
+}
+.nav-list>ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    padding:10px 10px;
+    font-size:30px;
+}
+.body{
+    margin:auto;
+    padding:10px;
+}
+.search{
+    font-weight: bold;
+}
+.container{
+    margin-top:5px;
+    border:2px solid black;
+    border-radius: 12px;
+}
+.card-container{
+    display:flex;
+    padding:10px;
+    flex-wrap: wrap;    
+}
+.card{
+    height:340px;
+    width:230px;
+    padding:5px;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    margin:7px 5px;
+}
+.card:hover{
+    /* border:2px solid gray; */
+    box-shadow: 20px 20px 20px #d9d9d9, -20px -20px 60px #d9d9d9;
+    cursor: pointer;
+}
+.card-img{
+    height:150px;
+    width:230px;
+}
+.cuisines,.block{
+    color:gray;
+}
+.block{
+    display:flex;
+    justify-content: space-between;
+    padding:0px 2px 0px 2px;
+    height:60px;
+}
+.rating{
+    height:25px;
+    background-color: greenyellow;
+    border-radius: 3px;
+    padding:3px 2px 0px 2px;
+}
+.price{
+    padding:4px 0px 2px 0px;
+    font-size: 15px;
+}
+.time{
+    font-size:14px;
+}
+.footer{
+    margin:5px;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer>p{
+    font-size:20px;
+    font-weight: bold;
+}
