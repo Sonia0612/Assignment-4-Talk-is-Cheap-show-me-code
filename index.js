@@ -1900,8 +1900,8 @@ const Card=(props)=>{
             </div>
             <div className="block">
             <h4 className="rating">{avgRating?avgRating:3.5} &#9733;</h4>
-            <h5 className="price">{costForTwo}</h5>
-            <h6 className='time'>{data.info.sla.deliveryTime}mins</h6>
+            <h5 className="price">{costForTwo?costForTwo:100}</h5>
+            <h6 className='time'>{data.info.sla.deliveryTime?data.info.sla.deliveryTime:30} mins</h6>
             </div>
         </div>
     )
@@ -1912,20 +1912,9 @@ const Body=()=>{
             <div className="search">Search here</div>
             <div className="container">
                 <div className="card-container">
-                    <Card data={restDataList[0]}/>
-                    <Card data={restDataList[1]}/>
-                    <Card data={restDataList[2]}/>
-                    <Card data={restDataList[3]}/>
-                    <Card data={restDataList[4]}/>
-                    <Card data={restDataList[5]}/>
-                    <Card data={restDataList[6]}/>
-                    <Card data={restDataList[7]}/>
-                    <Card data={restDataList[8]}/>                    
-                    <Card data={restDataList[9]}/>                    
-                    <Card data={restDataList[10]}/>                    
-                    <Card data={restDataList[11]}/>                    
-
-                    
+                    {restDataList.map((restdata)=>(
+                        <Card key={restdata.info.id} data={restdata}/>                   
+                    ))}
                 </div>
             </div>
         </div>
