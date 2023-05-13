@@ -25,20 +25,17 @@ Qn3.. {TitleComponent} vs {<TitleComponent>} vs {<TitleComponent></TitleComponen
 - React component starts with capital letter.
 
 ### const TitleComponent=()=>{return
- (<h1 className='head'>Hi</h1>)
- }
+ (<h1 className='head'>Hi</h1>)}
+ 
 ### const Head=()=>{return 
-(<div><TitleComponent/></div>)
-}
+(<div><TitleComponent/></div>)}
 
 - When we wan't to include any component within our React component, we don't use shorthand property.
 - When we want to treat it as parent component and wrap child components within it.
 ### const TitleComponent=()=>{return 
-(<h1 className='head'>Hi</h1>)
-}
+(<h1 className='head'>Hi</h1>)}
 ### const Comp2=()=> {return
-(<h2>Comp2</h2>)
-}
+(<h2>Comp2</h2>)}
 ### const Head=()=>{return 
 (<div>
 <TitleComponent>
